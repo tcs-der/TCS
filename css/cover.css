@@ -76,6 +76,11 @@ body {
     border-bottom-color: #fff;
 }
 
+.nav-masthead .active.nav-link:hover,
+.nav-masthead .active.nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, 255);
+}
+
 @media (min-width: 48em) {
     .masthead-brand {
         float: left;
