@@ -1,273 +1,269 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>TCS · 2020/01</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/cover/">
 
     <!-- Bootstrap core CSS -->
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-      <link href="icons/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="icons/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body class="text-center">
-    <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead cover-container w-100 p-3 mx-auto">
+</head>
+<body class="text-center">
+<div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead cover-container w-100 p-3 mx-auto">
         <div class="inner">
-          <h3 class="masthead-brand">Portfólio</h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="teste.html">Atividades</a>
-            <a class="nav-link" href="#">Projetos</a>
-            <a class="nav-link" href="#">Outros</a>
-          </nav>
+            <h3 class="masthead-brand">Portfólio</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="teste.html">Atividades</a>
+                <a class="nav-link" href="#">Projetos</a>
+                <a class="nav-link" href="#">Outros</a>
+            </nav>
         </div>
-      </header>
+    </header>
 
-      <main role="main">
-<!--        <div class="container">-->
-<!--          &lt;!&ndash; Three columns of text below the carousel &ndash;&gt;-->
-<!--          <div class="row">-->
-<!--            <div class="col-lg-4">-->
-<!--              <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">-->
-<!--              <h2 class="mt-3">Daniel</h2>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4">-->
-<!--              <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">-->
-<!--              <h2 class="mt-3">Eliel</h2>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4">-->
-<!--              <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">-->
-<!--              <h2 class="mt-3">Renato</h2>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
+    <main role="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="col-md-10 col-md-offset-2">
+                        <div class="card-container manual-flip">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover"></div>
+                                    <div class="user-daniel">
+                                        <img src="imgs/daniel.jpeg">
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Daniel</h3>
+                                            <p class="profession">Web Developer</p>
+                                            <p class="text-center">
+                                                Atua no ramo desde 2017. <br>
+                                                Possui grande conhecimento <br>
+                                                em tecnologias essenciais <br>
+                                                para a criação de Sistemas Online.
+                                            </p>
+                                        </div>
+                                        <div class="footer text-center" onclick="rotateCard(this.parentElement)">
+                                            <i class="fa fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">"Ou você arrisca o algoritmo ou se conforma com a
+                                            gambiarra!"</h5>
+                                    </div>
+                                    <div class="content" onclick="rotateCard(this)">
+                                        <div class="main">
+                                            <h4 class="text-center">Algumas Compentências</h4>
+                                            <p class="text-center">Metodologias Ágeis com Scrum, Versionamento com Git e
+                                                GitFlow, HTML5, CSS3, Bootstrap, Laravel, Javascript, Jquery...</p>
+                                            <div class="stats-container">
+                                                <div class="stats">
+                                                    <h4>PHP</h4>
+                                                    <p>+3 anos</p>
+                                                </div>
+                                                <div class="stats">
+                                                    <h4>Vuejs</h4>
+                                                    <p>+2 anos</p>
+                                                </div>
+                                                <div class="stats">
+                                                    <h4>MySql</h4>
+                                                    <p>+3 anos</p>
+                                                </div>
+                                            </div>
 
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-4">
-                      <div class="col-md-10 col-md-offset-2">
-                          <div class="card-container manual-flip">
-                              <div class="card">
-                                  <div class="front">
-                                      <div class="cover"></div>
-                                      <div class="user-daniel">
-                                          <img src="imgs/daniel.jpeg">
-                                      </div>
-                                      <div class="content">
-                                          <div class="main">
-                                              <h3 class="name">Daniel</h3>
-                                              <p class="profession">Web Developer</p>
-                                              <p class="text-center">
-                                                  Atua no ramo desde 2017. <br>
-                                                  Possui grande conhecimento <br>
-                                                  em tecnologias essenciais <br>
-                                                  para a criação de Sistemas Online.
-                                              </p>
-                                          </div>
-                                          <div class="footer text-center" onclick="rotateCard(this.parentElement)">
-                                              <i class="fa fa-eye"></i>
-                                          </div>
-                                      </div>
-                                  </div> <!-- end front panel -->
-                                  <div class="back">
-                                      <div class="header">
-                                          <h5 class="motto">"Ou você arrisca o algoritmo ou se conforma com a gambiarra!"</h5>
-                                      </div>
-                                      <div class="content" onclick="rotateCard(this)">
-                                          <div class="main">
-                                              <h4 class="text-center">Algumas Compentências</h4>
-                                              <p class="text-center">Metodologias Ágeis com Scrum, Versionamento com Git e GitFlow, HTML5, CSS3, Bootstrap, Laravel, Javascript, Jquery...</p>
-                                              <div class="stats-container">
-                                                  <div class="stats">
-                                                      <h4>PHP</h4>
-                                                      <p>+3 anos</p>
-                                                  </div>
-                                                  <div class="stats">
-                                                      <h4>Vuejs</h4>
-                                                      <p>+2 anos</p>
-                                                  </div>
-                                                  <div class="stats">
-                                                      <h4>MySql</h4>
-                                                      <p>+3 anos</p>
-                                                  </div>
-                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                            <a href="#" title="bueno98daniel@gmail.com" class="google"><i
+                                                    class="fa fa-envelope-o fa-fw"></i></a>
+                                            <a href="https://www.instagram.com/_daniel.oll/" class="twitter"><i
+                                                    class="fa fa-instagram fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div>
+                </div><!-- end col-sm-4 -->
 
-                                          </div>
-                                      </div>
-                                      <div class="footer">
-                                          <div class="social-links text-center">
-                                              <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
-                                              <a href="#" title="bueno98daniel@gmail.com" class="google"><i class="fa fa-envelope-o fa-fw"></i></a>
-                                              <a href="https://www.instagram.com/_daniel.oll/" class="twitter"><i class="fa fa-instagram fa-fw"></i></a>
-                                          </div>
-                                      </div>
-                                  </div> <!-- end back panel -->
-                              </div> <!-- end card -->
-                          </div> <!-- end card-container -->
-                      </div>
-                  </div><!-- end col-sm-4 -->
+                <div class="col-md-4">
+                    <div class="col-md-10 col-md-offset-2">
+                        <div class="card-container manual-flip">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover"></div>
+                                    <div class="user-eliel">
+                                        <img src="imgs/eliel.jpg">
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Eliel</h3>
+                                            <p class="profession">Supervisor Administrativo</p>
+                                            <p class="text-center">
+                                                Atualmente trabalhando no <br>
+                                                Banco Bradesco S/A e cursando <br>
+                                                o 9º periodo de Ciência <br>
+                                                da Computação na PUC-GO.
+                                            </p>
+                                        </div>
+                                        <div class="footer text-center" onclick="rotateCard(this.parentElement)">
+                                            <i class="fa fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">"O segredo de um grande sucesso esta no trabalho em
+                                            equipe"</h5>
+                                    </div>
+                                    <div class="content" onclick="rotateCard(this)">
+                                        <div class="main">
+                                            <h4 class="text-center">Algumas Compentências</h4>
+                                            <p class="text-center">Vendas, Entregas, <br> Chefe do Setor Financeiro,
+                                                Leiturista, Supervisor Administrativo...</p>
+                                            <div class="stats-container">
+                                                <div class="stats stats-2x">
+                                                    <h4>Gestão</h4>
+                                                    <p>+3 anos</p>
+                                                </div>
+                                                <div class="stats stats-2x">
+                                                    <h4>Vendas</h4>
+                                                    <p>+5 anos</p>
+                                                </div>
+                                            </div>
 
-                  <div class="col-md-4">
-                      <div class="col-md-10 col-md-offset-2">
-                          <div class="card-container manual-flip">
-                              <div class="card">
-                                  <div class="front">
-                                      <div class="cover"></div>
-                                      <div class="user-eliel">
-                                          <img src="imgs/eliel.jpg">
-                                      </div>
-                                      <div class="content">
-                                          <div class="main">
-                                              <h3 class="name">Eliel</h3>
-                                              <p class="profession">Supervisor Administrativo</p>
-                                              <p class="text-center">
-                                                  Atualmente trabalhando no <br>
-                                                  Banco Bradesco S/A e cursando <br>
-                                                  o 9º periodo de Ciência <br>
-                                                  da Computação na PUC-GO.
-                                              </p>
-                                          </div>
-                                          <div class="footer text-center" onclick="rotateCard(this.parentElement)">
-                                              <i class="fa fa-eye"></i>
-                                          </div>
-                                      </div>
-                                  </div> <!-- end front panel -->
-                                  <div class="back">
-                                      <div class="header">
-                                          <h5 class="motto">"O segredo de um grande sucesso esta no trabalho em equipe"</h5>
-                                      </div>
-                                      <div class="content" onclick="rotateCard(this)">
-                                          <div class="main">
-                                              <h4 class="text-center">Algumas Compentências</h4>
-                                              <p class="text-center">Vendas, Entregas, <br> Chefe do Setor Financeiro, Leiturista, Supervisor Administrativo...</p>
-                                              <div class="stats-container">
-                                                  <div class="stats stats-2x">
-                                                      <h4>Gestão</h4>
-                                                      <p>+3 anos</p>
-                                                  </div>
-                                                  <div class="stats stats-2x">
-                                                      <h4>Vendas</h4>
-                                                      <p>+5 anos</p>
-                                                  </div>
-                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="https://www.facebook.com/eliel.calore" class="facebook"><i
+                                                    class="fa fa-facebook fa-fw"></i></a>
+                                            <a href="#" class="google" title="Eliel@gmail.com"><i
+                                                    class="fa fa-envelope-o fa-fw"></i></a>
+                                            <a href="https://www.instagram.com/elielcalore/" class="twitter"><i
+                                                    class="fa fa-instagram fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div>
+                </div><!-- end col-sm-4 -->
 
-                                          </div>
-                                      </div>
-                                      <div class="footer">
-                                          <div class="social-links text-center">
-                                              <a href="https://www.facebook.com/eliel.calore" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
-                                              <a href="#" class="google" title="Eliel@gmail.com"><i class="fa fa-envelope-o fa-fw"></i></a>
-                                              <a href="https://www.instagram.com/elielcalore/" class="twitter"><i class="fa fa-instagram fa-fw"></i></a>
-                                          </div>
-                                      </div>
-                                  </div> <!-- end back panel -->
-                              </div> <!-- end card -->
-                          </div> <!-- end card-container -->
-                      </div>
-                  </div><!-- end col-sm-4 -->
+                <div class="col-md-4">
+                    <div class="col-md-10 col-md-offset-2">
+                        <div class="card-container manual-flip">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover"></div>
+                                    <div class="user">
+                                        <img class="rounded-circle"
+                                             src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                             alt="Generic placeholder image">
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Renato</h3>
+                                            <p class="profession">Desenvolvedor C++</p>
+                                            <p class="text-center">
+                                                Amante do bom e velho café desde<br>
+                                                seu nascimento. Implementou <br>
+                                                algoritmos de importantes para<br>
+                                                a safra de café no Brasil.
+                                            </p>
+                                        </div>
+                                        <div class="footer text-center">
+                                            <i class="fa fa-eye" onclick="rotateCard(this.parentElement)"></i>
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">"A vida começa depois do café"</h5>
+                                    </div>
+                                    <div class="content" onclick="rotateCard(this)">
+                                        <div class="main">
+                                            <h4 class="text-center">Algumas Compentências</h4>
+                                            <p class="text-center">Lógica de Programação, Desenvolvimento Web, Redes de
+                                                Computadores, Inteligencia Computacional...</p>
+                                            <div class="stats-container">
+                                                <div class="stats">
+                                                    <h4>C#</h4>
+                                                    <p>+2 anos</p>
+                                                </div>
+                                                <div class="stats">
+                                                    <h4>C++</h4>
+                                                    <p>+4 anos</p>
+                                                </div>
+                                                <div class="stats">
+                                                    <h4>Python</h4>
+                                                    <p>+2 ano</p>
+                                                </div>
+                                            </div>
 
-                  <div class="col-md-4">
-                      <div class="col-md-10 col-md-offset-2">
-                          <div class="card-container manual-flip">
-                              <div class="card">
-                                  <div class="front">
-                                      <div class="cover"></div>
-                                      <div class="user">
-                                          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image">
-                                      </div>
-                                      <div class="content">
-                                          <div class="main">
-                                              <h3 class="name">Renato</h3>
-                                              <p class="profession">Desenvolvedor C++</p>
-                                              <p class="text-center">
-                                                  Amante do bom e velho café desde<br>
-                                                  seu nascimento. Implementou <br>
-                                                  algoritmos de importantes para<br>
-                                                  a safra de café no Brasil.
-                                              </p>
-                                          </div>
-                                          <div class="footer text-center">
-                                              <i class="fa fa-eye" onclick="rotateCard(this.parentElement)"></i>
-                                          </div>
-                                      </div>
-                                  </div> <!-- end front panel -->
-                                  <div class="back">
-                                      <div class="header">
-                                          <h5 class="motto">"A vida começa depois do café"</h5>
-                                      </div>
-                                      <div class="content" onclick="rotateCard(this)">
-                                          <div class="main">
-                                              <h4 class="text-center">Algumas Compentências</h4>
-                                              <p class="text-center">Lógica de Programação, Desenvolvimento Web, Redes de Computadores, Inteligencia Computacional...</p>
-                                              <div class="stats-container">
-                                                  <div class="stats">
-                                                      <h4>C#</h4>
-                                                      <p>+2 anos</p>
-                                                  </div>
-                                                  <div class="stats">
-                                                      <h4>C++</h4>
-                                                      <p>+4 anos</p>
-                                                  </div>
-                                                  <div class="stats">
-                                                      <h4>Python</h4>
-                                                      <p>+2 ano</p>
-                                                  </div>
-                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                            <a href="#" title="higor.renatoo0@gmail.com" class="google"><i
+                                                    class="fa fa-envelope-o fa-fw"></i></a>
+                                            <a href="https://www.instagram.com/Renato.higor/" class="twitter"><i
+                                                    class="fa fa-instagram fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div>
+                </div> <!-- end col-sm-4 -->
 
-                                          </div>
-                                      </div>
-                                      <div class="footer">
-                                          <div class="social-links text-center">
-                                              <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
-                                              <a href="#" title="higor.renatoo0@gmail.com" class="google"><i class="fa fa-envelope-o fa-fw"></i></a>
-                                              <a href="https://www.instagram.com/Renato.higor/" class="twitter"><i class="fa fa-instagram fa-fw"></i></a>
-                                          </div>
-                                      </div>
-                                  </div> <!-- end back panel -->
-                              </div> <!-- end card -->
-                          </div> <!-- end card-container -->
-                      </div>
-                  </div> <!-- end col-sm-4 -->
+            </div> <!-- end row -->
+            <div class="space-200"></div>
+        </div>
+    </main>
 
-              </div> <!-- end row -->
-              <div class="space-200"></div>
-          </div>
-      </main>
-
-      <footer class="mastfoot mt-auto">
+    <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>TCS - <a href="http://lucilia.com.br/">Lucilia Ribeiro</a> | Github: <a href="https://github.com/tcs-der"> tcs-der</a></p>
+            <p>TCS - <a href="http://lucilia.com.br/">Lucilia Ribeiro</a> | Github: <a
+                    href="https://github.com/tcs-der"> tcs-der</a></p>
         </div>
-      </footer>
-    </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-      $('a.nav-link').click(function(e){
+    </footer>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $('a.nav-link').click(function (e) {
 
         $('a.nav-link').each(function (i, val) {
-          $(val).removeClass('active');
+            $(val).removeClass('active');
         });
 
         $(this).addClass('active');
 
-      });
+    });
 
-      function rotateCard(btn){
-          var $card = $(btn).closest('.card-container');
-          console.log($card);
-          if($card.hasClass('hover')){
-              $card.removeClass('hover');
-          } else {
-              $card.addClass('hover');
-          }
-      }
+    function rotateCard(btn) {
+        var $card = $(btn).closest('.card-container');
+        console.log($card);
+        if ($card.hasClass('hover')) {
+            $card.removeClass('hover');
+        } else {
+            $card.addClass('hover');
+        }
+    }
 
-    </script>
-  </body>
+</script>
+</body>
 </html>

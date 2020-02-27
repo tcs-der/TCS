@@ -267,7 +267,7 @@ body {
     text-align: center;
 }
 .card .footer i {
-    color:black;
+    color:gray;
     cursor: pointer;
 }
 .card .footer .social-links{
