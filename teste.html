@@ -13,11 +13,6 @@
             font-size: 14px;
             background-color: #E5E9ED;
         }
-        .btn:hover,
-        .btn:focus,
-        .btn:active{
-            outline: 0 !important;
-        }
         /* entire container, keeps perspective */
         .card-container {
             -webkit-perspective: 800px;
@@ -83,12 +78,6 @@
             z-index: 3;
         }
 
-        .back .btn-simple{
-            position: absolute;
-            left: 0;
-            bottom: 4px;
-        }
-
         .card{
             background: none repeat scroll 0 0 #FFFFFF;
             border-radius: 4px;
@@ -123,6 +112,15 @@
             width: 120px;
         }
 
+        .card .user-daniel{
+            border-radius: 50%;
+            position: relative;
+            height: 120px;
+            margin: -55px auto 0;
+            overflow: hidden;
+            width: 120px;
+        }
+
         .card .user img{
             background: none repeat scroll 0 0 #FFFFFF;
             width: 100%;
@@ -135,6 +133,12 @@
             margin: -20px 0;
         }
 
+        .card .user-daniel img{
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+
         .card .content{
             background-color: rgba(0, 0, 0, 0);
             box-shadow: none;
@@ -145,6 +149,7 @@
         }
         .card .back .content .main {
             height: 215px;
+            cursor: pointer;
         }
         .card .name {
             font-size: 22px;
@@ -170,15 +175,17 @@
             padding: 10px 0 0;
             text-align: center;
         }
+        .card .footer i {
+            cursor: pointer;
+        }
         .card .footer .social-links{
             font-size: 18px;
         }
         .card .footer .social-links a{
             margin: 0 7px;
+            cursor: pointer;
         }
-        .card .footer .btn-simple{
-            margin-top: -6px;
-        }
+
         .card .header {
             padding: 15px 20px;
             height: 90px;
@@ -202,6 +209,9 @@
             width: 33.333333%;
             text-align: center;
         }
+        .card .stats-2x{
+            width: 49.999999% !important;
+        }
 
         .card .stats:first-child{
             border-right: 1px solid #EEEEEE;
@@ -215,37 +225,6 @@
         }
         .card .stats p{
             color: #777777;
-        }
-
-        .title{
-            color: #506A85;
-            text-align: center;
-            font-weight: 300;
-            font-size: 44px;
-            margin-bottom: 90px;
-            line-height: 90%;
-        }
-        .title small{
-            font-size: 17px;
-            color: #999;
-            text-transform: uppercase;
-            margin: 0;
-        }
-
-        .btn-simple{
-            opacity: .8;
-            color: #666666;
-            background-color: transparent;
-        }
-
-        .btn-simple:hover,
-        .btn-simple:focus{
-            background-color: transparent;
-            box-shadow: none;
-            opacity: 1;
-        }
-        .btn-simple i{
-            font-size: 16px;
         }
 
         @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -281,25 +260,30 @@
                     <div class="card">
                         <div class="front">
                             <div class="cover"></div>
-                            <div class="user">
-                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image">
+                            <div class="user-daniel">
+                                <img src="imgs/daniel.jpeg">
                             </div>
-                            <div class="content" onclick="rotateCard(this)">
+                            <div class="content">
                                 <div class="main">
                                     <h3 class="name">Daniel</h3>
                                     <p class="profession">Web Developer</p>
-                                    <p class="text-center">Progamador Web desde 2017, <br> Daniel possui conhecimento <br> em tecnologias essenciais <br> para a criação de Sistemas Online.</p>
+                                    <p class="text-center">
+                                        Atua no ramo desde 2017. <br>
+                                        Possui grande conhecimento <br>
+                                        em tecnologias essenciais <br>
+                                        para a criação de Sistemas Online.
+                                    </p>
                                 </div>
-                                <div class="footer text-center" onclick="rotateCard(this)">
+                                <div class="footer text-center" onclick="rotateCard(this.parentElement)">
                                     <i class="fa fa-eye"></i>
                                 </div>
                             </div>
                         </div> <!-- end front panel -->
-                        <div class="back" onclick="rotateCard(this)">
+                        <div class="back">
                             <div class="header">
-                                <h5 class="motto">"Ou você arrisca ou se conforma!"</h5>
+                                <h5 class="motto">"Ou você arrisca o algoritmo ou se conforma com a gambiarra!"</h5>
                             </div>
-                            <div class="content">
+                            <div class="content" onclick="rotateCard(this)">
                                 <div class="main">
                                     <h4 class="text-center">Algumas Compentências</h4>
                                     <p class="text-center">Metodologias Ágeis com Scrum, Versionamento com Git e GitFlow, HTML5, CSS3, Bootstrap, Laravel, Javascript, Jquery...</p>
@@ -322,9 +306,9 @@
                             </div>
                             <div class="footer">
                                 <div class="social-links text-center">
-                                    <a href="http://deepak646.blogspot.in/" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
-                                    <a href="http://deepak646.blogspot.in/" class="google"><i class="fa fa-envelope-o fa-fw"></i></a>
-                                    <a href="http://deepak646.blogspot.in/" class="twitter"><i class="fa fa-instagram fa-fw"></i></a>
+                                    <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                    <a href="#" title="bueno98daniel@gmail.com" class="google"><i class="fa fa-envelope-o fa-fw"></i></a>
+                                    <a href="https://www.instagram.com/_daniel.oll/" class="twitter"><i class="fa fa-instagram fa-fw"></i></a>
                                 </div>
                             </div>
                         </div> <!-- end back panel -->
@@ -340,39 +324,40 @@
                         <div class="front">
                             <div class="cover"></div>
                             <div class="user-eliel">
-                                <img src="Projeto_curriculum/Imagens/1.JPG">
+                                <img src="imgs/eliel.jpg">
                             </div>
-                            <div class="content" onclick="rotateCard(this)">
+                            <div class="content">
                                 <div class="main">
                                     <h3 class="name">Eliel</h3>
-                                    <p class="profession">Web Developer</p>
-                                    <p class="text-center">Progamador Web desde 2017, <br> Eliel possui conhecimento <br> em tecnologias essenciais <br> para a criação de Sistemas Online.</p>
+                                    <p class="profession">Supervisor Administrativo</p>
+                                    <p class="text-center">
+                                        Atualmente trabalhando no <br>
+                                        Banco Bradesco S/A e cursando <br>
+                                        o 9º periodo de Ciência <br>
+                                        da Computação na PUC-GO.
+                                    </p>
                                 </div>
-                                <div class="footer text-center" onclick="rotateCard(this)">
+                                <div class="footer text-center" onclick="rotateCard(this.parentElement)">
                                     <i class="fa fa-eye"></i>
                                 </div>
                             </div>
                         </div> <!-- end front panel -->
-                        <div class="back" onclick="rotateCard(this)">
+                        <div class="back">
                             <div class="header">
-                                <h5 class="motto">"Frase"</h5>
+                                <h5 class="motto">"O segredo de um grande sucesso esta no trabalho em equipe"</h5>
                             </div>
-                            <div class="content">
+                            <div class="content" onclick="rotateCard(this)">
                                 <div class="main">
                                     <h4 class="text-center">Algumas Compentências</h4>
-                                    <p class="text-center">Metodologias Ágeis com Scrum, Versionamento com Git e GitFlow, HTML5, CSS3, Bootstrap, Laravel, Javascript, Jquery...</p>
+                                    <p class="text-center">Vendas, Entregas, <br> Chefe do Setor Financeiro, Leiturista, Supervisor Administrativo...</p>
                                     <div class="stats-container">
-                                        <div class="stats">
-                                            <h4>PHP</h4>
+                                        <div class="stats stats-2x">
+                                            <h4>Gestão</h4>
                                             <p>+3 anos</p>
                                         </div>
-                                        <div class="stats">
-                                            <h4>Vuejs</h4>
-                                            <p>+2 anos</p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4>MySql</h4>
-                                            <p>+3 anos</p>
+                                        <div class="stats stats-2x">
+                                            <h4>Vendas</h4>
+                                            <p>+5 anos</p>
                                         </div>
                                     </div>
 
@@ -380,9 +365,9 @@
                             </div>
                             <div class="footer">
                                 <div class="social-links text-center">
-                                    <a href="http://deepak646.blogspot.in/" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
-                                    <a href="http://deepak646.blogspot.in/" class="google"><i class="fa fa-envelope-o fa-fw"></i></a>
-                                    <a href="http://deepak646.blogspot.in/" class="twitter"><i class="fa fa-instagram fa-fw"></i></a>
+                                    <a href="https://www.facebook.com/eliel.calore" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                    <a href="#" class="google" title="Eliel@gmail.com"><i class="fa fa-envelope-o fa-fw"></i></a>
+                                    <a href="https://www.instagram.com/elielcalore/" class="twitter"><i class="fa fa-instagram fa-fw"></i></a>
                                 </div>
                             </div>
                         </div> <!-- end back panel -->
@@ -400,37 +385,42 @@
                             <div class="user">
                                 <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image">
                             </div>
-                            <div class="content" onclick="rotateCard(this)">
+                            <div class="content">
                                 <div class="main">
                                     <h3 class="name">Renato</h3>
-                                    <p class="profession">Web Developer</p>
-                                    <p class="text-center">Progamador Web desde 2017, <br> Renato possui conhecimento <br> em tecnologias essenciais <br> para a criação de Sistemas Online.</p>
+                                    <p class="profession">Desenvolvedor C++</p>
+                                    <p class="text-center">
+                                        Amante do bom e velho café desde<br>
+                                        seu nascimento. Implementou <br>
+                                        algoritmos de importantes para<br>
+                                        a safra de café no Brasil.
+                                    </p>
                                 </div>
-                                <div class="footer text-center" onclick="rotateCard(this)">
-                                    <i class="fa fa-eye"></i>
+                                <div class="footer text-center">
+                                    <i class="fa fa-eye" onclick="rotateCard(this.parentElement)"></i>
                                 </div>
                             </div>
                         </div> <!-- end front panel -->
-                        <div class="back" onclick="rotateCard(this)">
+                        <div class="back">
                             <div class="header">
-                                <h5 class="motto">"Frase"</h5>
+                                <h5 class="motto">"A vida começa depois do café"</h5>
                             </div>
-                            <div class="content">
+                            <div class="content" onclick="rotateCard(this)">
                                 <div class="main">
                                     <h4 class="text-center">Algumas Compentências</h4>
-                                    <p class="text-center">Metodologias Ágeis com Scrum, Versionamento com Git e GitFlow, HTML5, CSS3, Bootstrap, Laravel, Javascript, Jquery...</p>
+                                    <p class="text-center">Lógica de Programação, Desenvolvimento Web, Redes de Computadores, Inteligencia Computacional...</p>
                                     <div class="stats-container">
                                         <div class="stats">
-                                            <h4>PHP</h4>
-                                            <p>+3 anos</p>
-                                        </div>
-                                        <div class="stats">
-                                            <h4>Vuejs</h4>
+                                            <h4>C#</h4>
                                             <p>+2 anos</p>
                                         </div>
                                         <div class="stats">
-                                            <h4>MySql</h4>
-                                            <p>+3 anos</p>
+                                            <h4>C++</h4>
+                                            <p>+4 anos</p>
+                                        </div>
+                                        <div class="stats">
+                                            <h4>Python</h4>
+                                            <p>+2 ano</p>
                                         </div>
                                     </div>
 
@@ -438,9 +428,9 @@
                             </div>
                             <div class="footer">
                                 <div class="social-links text-center">
-                                    <a href="http://deepak646.blogspot.in/" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
-                                    <a href="http://deepak646.blogspot.in/" class="google"><i class="fa fa-envelope-o fa-fw"></i></a>
-                                    <a href="http://deepak646.blogspot.in/" class="twitter"><i class="fa fa-instagram fa-fw"></i></a>
+                                    <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                    <a href="#" title="higor.renatoo0@gmail.com" class="google"><i class="fa fa-envelope-o fa-fw"></i></a>
+                                    <a href="https://www.instagram.com/Renato.higor/" class="twitter"><i class="fa fa-instagram fa-fw"></i></a>
                                 </div>
                             </div>
                         </div> <!-- end back panel -->
@@ -466,10 +456,6 @@
             $card.addClass('hover');
         }
     }
-
-    setTimeout(function () {
-        rotateCard();
-    }, 1000);
 
 </script>
 </body>
