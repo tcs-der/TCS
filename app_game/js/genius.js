@@ -1,10 +1,4 @@
 /**
- *             SIMON GAME
- *         for freeCodeCamp.com
- *
- *           by EmAnt - 2015
- *
- *     Simple Game using CSS3 & jQuery
  *
  ***********************************************
  * !!! It uses the new Web Audio API !!!
@@ -52,7 +46,7 @@ $(document).ready(function(){
         gameStatus.reset = function(){
             this.init();
             this.strict = false;
-        }
+        };
 
         gameStatus.init = function(){
             this.lastPush = $('#0');
@@ -268,7 +262,7 @@ $(document).ready(function(){
                 $('#mode-led').removeClass('led-on');
                 $('.push').removeClass('clickable').addClass('unclickable');
                 $('#start').off('click');
-                $('#mode').off('click');
+                // $('#mode').off('click');
                 $('.btn').removeClass('unclickable').addClass('clickable');
                 resetTimers();
                 stopGoodTones();
@@ -277,7 +271,7 @@ $(document).ready(function(){
                 $('.btn').removeClass('unclickable').addClass('clickable');
                 $('.count').removeClass('led-off');
                 $('#start').click(gameStart);
-                $('#mode').click(toggleStrict);
+                // $('#mode').click(toggleStrict);
             }
         });
 
